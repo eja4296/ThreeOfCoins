@@ -13,6 +13,7 @@ public class Avatar : MonoBehaviour {
     int intelligence; // Intelligence stat, for magic and stuff
     int gold; // Gold, for buying items
     List<FightCard> fightDeck; // The deck of Fight Cards available to the player
+    List<int> fightCardPlayed; // Keep a list of what cards were played so they do not get played again
     bool alive;
 
 	// Use this for initialization
@@ -20,8 +21,16 @@ public class Avatar : MonoBehaviour {
 		
 	}
 
+    // Add card to fight deck based on Event Card, NPC
     void AddToFightDeck(FightCard newFC)
     {
         fightDeck.Add(newFC);
+    }
+
+    // Apply fight card effects
+
+    void ApplyFightCardEffect(FightCard votedCard)
+    {
+        // ...
     }
 }

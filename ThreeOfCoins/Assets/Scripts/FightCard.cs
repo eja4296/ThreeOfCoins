@@ -16,6 +16,6 @@ public class FightCard : MonoBehaviour {
 		
 	}
 
-
+    // could apply fightcard here or in Avatar
 
 }

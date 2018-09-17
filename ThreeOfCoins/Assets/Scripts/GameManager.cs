@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
     Avatar avatar; // Instance of the avatar controlled by the players
     List<Player> players; // All players playing the game
     List<EventCard> eventDeck; // Deck of Event Cards to determine ecounters
+    List<int> eventCardPlayed; // Keep a list of what event cards were played so they don't get played again
+    
 
 	// Use this for initialization
 	void Start () {

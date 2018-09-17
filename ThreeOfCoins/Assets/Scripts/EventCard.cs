@@ -10,13 +10,16 @@ public class EventCard : MonoBehaviour {
     string description;
     NPC nonPlayerCharacter;
     List<string> voteChoices;
-    List<string> voteEffects; // What avatar attributes it affects
-    List<int> voteEffectStrengths; // How much it affects the attribute
+    List<string> effects; // What avatar attributes it affects
+    List<int> effectStrengths; // How much it affects the attribute
+    FightCard item;
+    // Possibly multilayer events
 
     // Use this for initialization
     void Start () {
 		
 	}
 	
+    // don't want the right choice to be obvious (risk vs reward)
 
 }
