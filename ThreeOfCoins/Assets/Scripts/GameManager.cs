@@ -6,10 +6,10 @@ using UnityEngine;
 // This will be used for handling the main gameplay
 public class GameManager : MonoBehaviour {
     // Attributes
-    Avatar avatar; // Instance of the avatar controlled by the players
-    List<Player> players; // All players playing the game
-    List<EventCard> eventDeck; // Deck of Event Cards to determine ecounters
-    List<int> eventCardPlayed; // Keep a list of what event cards were played so they don't get played again
+    public Avatar avatar; // Instance of the avatar controlled by the players
+    public List<Player> players; // All players playing the game
+    public List<EventCard> eventDeck; // Deck of Event Cards to determine ecounters
+    public List<int> eventCardPlayed; // Keep a list of what event cards were played so they don't get played again
     
 
 	// Use this for initialization
@@ -22,4 +22,36 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+
+    // Create Event Deck
+    // Get set number of all event cards, "shuffle them", lay them out face down
+
+    // Start Event
+    // Display the description of the event
+        
+        // Handle Event
+        // Show voting options and effects
+
+        // Handle vote
+
+        // Handle Outcome
+        
+        // If NPC fights, Handle Combat
+            // Draw 3 cards from fight deck
+
+            // Handle fight card vote
+
+            // Apply fight card effect
+
+            // Handle NPC move
+
+            // Loop until combat finished
+
+        // Loop event until complete, then start next one
+            
+
+
+ 
+    
 }

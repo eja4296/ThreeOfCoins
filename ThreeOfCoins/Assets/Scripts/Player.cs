@@ -6,8 +6,8 @@ using UnityEngine;
 // This will be for every human player
 public class Player : MonoBehaviour {
     // Attributes
-    int vote; // Which option the player votes for
-    int voteWeight; // How much weight the player's vote is given
+    public int voteChoice; // Which option the player votes for
+    public int voteWeight; // How much weight the player's vote is given
     // int score // ???
 
 	// Use this for initialization
@@ -18,7 +18,20 @@ public class Player : MonoBehaviour {
 
     int Vote()
     {
-        return vote * voteWeight;
+        return voteChoice * voteWeight;
+    }
+
+    // Properties
+    public int VoteChoice
+    {
+        get { return voteChoice; }
+        set { voteChoice = value; }
+    }
+
+    public int VoteWeight
+    {
+        get { return voteWeight; }
+        set { voteWeight = value; }
     }
 
 }

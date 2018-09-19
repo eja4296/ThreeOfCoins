@@ -7,12 +7,12 @@ using UnityEngine;
 // (May want to read these in as a text file)
 public class EventCard : MonoBehaviour {
     // Attributes
-    string description;
-    NPC nonPlayerCharacter;
-    List<string> voteChoices;
-    List<string> effects; // What avatar attributes it affects
-    List<int> effectStrengths; // How much it affects the attribute
-    FightCard item;
+    public string description;
+    public NPC nonPlayerCharacter;
+    public List<string> voteChoices;
+    public List<string> effects; // What avatar attributes it affects
+    public List<int> effectStrengths; // How much it affects the attribute
+    public FightCard item;
     // Possibly multilayer events
 
     // Use this for initialization
