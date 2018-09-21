@@ -64,4 +64,10 @@ public class Avatar : MonoBehaviour {
         get { return gold; }
         set { gold = value; }
     }
+
+    public bool Alive
+    {
+        get { return alive; }
+        set { alive = value; }
+    }
 }

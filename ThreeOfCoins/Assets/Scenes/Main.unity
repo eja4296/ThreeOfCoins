@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa20a7af9e0d1d849b875f3b20eda523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vote: 0
+  voteChoice: 0
   voteWeight: 0
 --- !u!65 &151851301
 BoxCollider:
@@ -567,7 +567,10 @@ MonoBehaviour:
   - {fileID: 151851300}
   eventDeck:
   - {fileID: 1512290353}
+  allEventCards: []
   eventCardPlayed: 
+  numberOfEvents: 0
+  turn: 0
 --- !u!1 &1463709815
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,10 +701,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f561d3b80fa9a354897460effc17c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: 
+  description: You enter a...
   nonPlayerCharacter: {fileID: 0}
-  voteChoices: []
-  effects: []
+  voteChoices:
+  - Strength
+  - Intelligence
+  effects:
+  - 1
+  - -1
   effectStrengths: 
   item: {fileID: 0}
 --- !u!65 &1512290354
