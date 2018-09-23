@@ -19,5 +19,9 @@ public class NPC : MonoBehaviour {
 		
 	}
 	
-
+    public int Health
+    {
+        get{ return health; }
+        set{ health = value; }
+    }
 }

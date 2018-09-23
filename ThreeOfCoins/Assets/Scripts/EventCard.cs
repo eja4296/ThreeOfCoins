@@ -8,11 +8,13 @@ using UnityEngine;
 public class EventCard : MonoBehaviour {
     // Attributes
     public string description;
-    public NPC nonPlayerCharacter;
-    public List<string> voteChoices;
+    public List<string> options; // Options for the avatar
+    
     public List<string> effects; // What avatar attributes it affects
     public List<int> effectStrengths; // How much it affects the attribute
-    public FightCard item;
+    public NPC nonPlayerCharacter; // If an NPC is part of the event
+    public FightCard item; // If a Fight Card is part of the event (dropped by event)
+    public bool combat; // If combat is part of the event
     // Possibly multilayer events
 
     // Use this for initialization
